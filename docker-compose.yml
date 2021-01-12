@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  slack-bot:
+    build: ./
+    container_name: slack-bot
+    restart: always
+    env_file:
+      - envfile.txt
